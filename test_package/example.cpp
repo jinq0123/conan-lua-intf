@@ -1,6 +1,9 @@
 #include <iostream>
-#include "hello.h"
+
+#include "LuaIntf/LuaIntf.h"
 
 int main() {
-    hello();
+    using LuaIntf::LuaState;
+    LuaState s = LuaState::newState();
+    return 0;
 }

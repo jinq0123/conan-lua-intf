@@ -4,6 +4,7 @@ import os
 class LuaintfTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
+    requires = "lua-cpp/5.3.4@jinq0123/testing"
 
     def build(self):
         cmake = CMake(self)
